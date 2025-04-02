@@ -1,0 +1,181 @@
+/* Colores base */
+:root {
+    --color-fondo: #1c1c1c; /* Fondo oscuro */
+    --color-primario: #26b747; /* Verde oscuro (Tanjiro) */
+    --color-secundario: #f20000; /* Rojo intenso (Nezuko) */
+    --color-terciario: #c19f7f; /* Marrón dorado (estilo tradicional japonés) */
+    --color-texto: #fff; /* Blanco para el texto */
+    --color-tabla: #444; /* Gris oscuro para la tabla */
+}
+
+/* Estilo general del body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+/* Cabecera */
+h1 {
+    text-align: center;
+    color: var(--color-primario);
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px var(--color-secundario);
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: var(--color-tabla);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color: var(--color-primario);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-texto);
+}
+
+td {
+    background-color: #555;
+    font-size: 14px;
+}
+
+td img {
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--color-secundario);
+}
+
+/* Botones */
+.btn {
+    background-color: var(--color-primario);
+    border: none;
+    color: var(--color-texto);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: var(--color-secundario);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Botones adicionales para editar y eliminar */
+.btn-warning {
+    background-color: #f1c27d;
+}
+
+.btn-danger {
+    background-color: #9e2623;
+}
+
+.btn-info {
+    background-color: var(--color-terciario);
+}
+
+/* Estilo para los enlaces */
+a {
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el menú de navegación */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: var(--color-texto);
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    background-color: var(--color-primario);
+    color: #fff;
+}
+
+/* Estilo para la imagen del personaje */
+.personaje-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-secundario);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para los formularios */
+form {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+form input, form button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"] {
+    background-color: #333;
+    color: var(--color-texto);
+}
+
+form button {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--color-secundario);
+}
